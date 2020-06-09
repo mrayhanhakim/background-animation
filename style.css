@@ -1,0 +1,31 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  overflow: hidden;
+}
+
+#container {
+  width: 100%;
+  min-height: 100vh;
+  background-color: #1f69ff;
+}
+
+.outer-square {
+  width: 233px;
+  height: 233px;
+  background-color: #2b71ff;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: absolute;
+  transform: rotate(45deg);
+  transition: width 0.3s, height 0.3s, top 0.3s, left 0.3s;
+  z-index: 1;
+}
+
+.inner-square {
+  width: 132px;
+  height: 132px;
+  background-color: #4683ff;
+}
